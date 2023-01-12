@@ -9,55 +9,79 @@
   to = "https://cfblog.17lai.site/rss.xml"
   
 [[headers]]
-  for = "(.*).webp"
+  for = "*.webp"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
-  for = "(.*).png"
+  for = "*.png"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
-  for = "(.*).jpg"
+  for = "*.jpg"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
-  for = "(.*).svg"
+  for = "*.jpeg"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
-  for = "(.*).ttf"
+  for = "*.svg"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
-  for = "(.*).woff"
+  for = "*.ttf"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
-  for = "(.*).woff2"
+  for = "*.woff"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
-  for = "/medias_webp/*"
+  for = "*.woff2"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
-  for = "(.*).html"
+  for = "/medias_webp/**"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "/libs/**"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "/data/**"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "/media/**"
+  [headers.values]
+    Cache-Control = "public, s-max-age=604800"
+[[headers]]
+  for = "*.html"
   [headers.values]
     Cache-Control = "public, s-max-age=1800"
 [[headers]]
-  for = "(.*).css"
+  for = "/css/*.css"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
-  for = "(.*).js"
+  for = "/js/*.js"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
-  for = "(.*).lrc"
+  for = "*.lrc"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
 [[headers]]
-  for = "(.*).mp3"
+  for = "*.mp3"
   [headers.values]
     Cache-Control = "public, s-max-age=604800"
     
+[[headers]]
+  for = "*.json"
+  [headers.values]
+    Cache-Control = "public, s-max-age=43200"
+[[headers]]
+  for = "*.xml"
+  [headers.values]
+    Cache-Control = "public, s-max-age=43200"
