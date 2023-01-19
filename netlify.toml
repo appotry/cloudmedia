@@ -88,3 +88,7 @@
   [headers.values]
     Cache-Control = "public, s-max-age=43200"
     
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Access-Control-Allow-Origin = "*"
