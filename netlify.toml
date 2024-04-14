@@ -23,7 +23,7 @@
 [[headers]]
   for = "*.webm"
   [headers.values]
-    Cache-Control = "public, max-age=31536000"
+    Cache-Control = "public, max-age=51536000"
 [[headers]]
   for = "*.png"
   [headers.values]
